@@ -1,8 +1,11 @@
+using NLog;
+
 public class Alumno
 {
-private int Id { get; set; }
-private string Nombre { get; set; }
-private string Apellido { get; set; }
-private int Dni { get; set; }
+public static Logger logger = LogManager.GetCurrentClassLogger();
+public int Id { get; set; }
+public string Nombre { get; set; }
+public string Apellido { get; set; }
+public int Dni { get; set; }
 public int Curso { get; set; }
 }
